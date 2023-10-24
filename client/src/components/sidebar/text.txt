@@ -1,0 +1,17 @@
+import { Link } from 'react-router-dom'
+
+const sidebarLinks = [
+    { id: 1, label: "Departments", img_path: departments, width: 20, height: 20, alt: "departments" },
+    { id: 2, label: "Activities", img_path: activities, width: 20, height: 20, alt: "activities" },
+    { id: 3, label: "Feedback", img_path: feedback, width: 20, height: 20, alt: "feedback" },
+    { id: 4, label: "Settings", img_path: settings, width: 20, height: 20, alt: "settings" },
+    { id: 5, label: "Dark Mode", img_path: darkMode, width: 20, height: 20, alt: "mode" },
+    { id: 6, label: "Log out", img_path: logout, width: 18, height: 18, alt: "logout" }
+];
+
+{ sidebarLinks.map(link => {
+    <Link to='' key={link.id} >
+        <img src={link.img_path} alt={link.alt} width={link.width} height={link.height} />&nbsp;{link.label}
+    </Link>
+    })
+}
