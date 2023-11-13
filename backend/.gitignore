@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+dist/
+
+# TypeScript
+*.tsbuildinfo
+*.js
+
+# Editor-specific
+.vscode/
+.idea/
+
+# System
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Environment
+.env
+.env.local
+
+# Dependency directories
+.pnpm/
+.yarn/
